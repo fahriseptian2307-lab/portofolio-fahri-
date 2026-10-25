@@ -1,0 +1,537 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+/*
+* menu
+*/
+nav {
+    background-color: #010736;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color:#fff;
+}
+.logo > {
+    display: flex;
+    align-items: center;
+}
+.logo > img {
+    height: 60px;
+}
+
+/*
+* hero / jumbotron
+*/
+
+header {
+    background: url('../images/bukit_klangon.jpeg');
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 5px;
+    text-shadow: 0 0 4px #000;
+}
+.header-opacity {
+    background-color: #010736;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-jumbotron > h4 {
+    color: #ffce10;
+    font-size: 2rem;
+}
+.header-jumbotron > h5 {
+    color: #fff;
+    margin: 0px;
+    padding: 5px;
+    font-size: 3.5rem;
+    line-height: 3.9rem;
+    text-transform: uppercase;
+}
+
+.header-jumbotron > p {
+    padding: 5px;
+    margin: 0px 5px 0px 5px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    text-shadow: none;
+}
+
+.button {
+    background-color: #ffce10;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-family: Calibri;
+}
+
+.button-x1 {
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+/*
+* statistic
+*/
+#statistic {
+    background-color: #393e46;
+    color: #FFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#statistic > .wrapper {
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#statistic > .wrapper > div {
+    text-align: center;
+}
+
+#statistic > .wrapper > div > p {
+    font-size: 3.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#statistic > .wrapper > div > p > i {
+    margin-right: 10px;
+    font-size: 3.5rem;
+}
+
+#statistic > .wrapper > div > small {
+    font-size: 1.5rem;
+}
+
+/*
+* media sosial
+*/
+#media-sosial {
+     background-color: #222831;
+     color: #FFF;
+}
+
+#media-sosial > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#media-sosial > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#media-sosial > .wrapper > h4 > span {
+    color: #ffce10;
+}
+
+#media-sosial > .wrapper > p {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    font-family: 'Times New Roman';
+    margin-bottom: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 50px
+}
+.grid > .item {
+    border: 1px solid #666 ;
+    background-color: #333;
+    border-radius: 5px;
+    position: relative;
+}
+
+.grid > .item > img {
+    width: 25%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.grid > .item > .item-detail {
+    padding: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 70%;
+}
+
+.grid > .item > .item-detail > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.grid > .item > .item-detail > div > small {
+    color: #ccc;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.grid > .item > .item-detail > div > a {
+    font-size: 1rem;
+    color: #333;
+}
+
+/*
+* tentang saya
+*/
+
+
+#tentang-saya {
+     background-color: #EEEEEE;
+     color: #333;
+}
+
+#tentang-saya > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#tentang-saya > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "kanit", sans-serif;
+}
+
+#tentang-saya > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+#tentang-saya > .wrapper > div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tentang-saya > .wrapper > div > .foto {
+    width: 30%;
+}
+
+#tentang-saya > .wrapper > div > .foto > img {
+    max-width: 100%;
+}
+
+#tentang-saya > .wrapper > div > .desc {
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+#tentang-saya > .wrapper > div > .desc > p {
+    margin: 0px 0px 10px 0px;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+}
+
+#tentang-saya > .wrapper > div > .desc > .sosmed {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+#tentang-saya > .wrapper > div > .desc > .sosmed > a {
+    color: #00adb5;
+}
+
+/*
+*free course
+*/
+#free-corse {
+    background-color: #393e46;
+    color: #FFF;
+    padding: 20px 0px 20px 0px;
+}
+
+#free-corse > .wrapper > h4 > span {
+    color: #ffce10;
+}
+
+#free-corse > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#free-corse > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#free-corse > .wrapper > h4 > span {
+    color: #ffce10;
+}
+
+#free-corse > .wrapper > p {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    font-family: 'Times New Roman';
+    margin-bottom: 50px;
+}
+
+#free-corse .wrapper > .grid > .item {
+    background-color: #000;
+    margin: 0px;
+    padding: 0px;
+}
+
+#free-corse .wrapper > .grid > .item > .item-detail {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+#free-corse .wrapper > .grid > .item > .item-detail > img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#free-corse .wrapper > .grid > .item > .item-detail > div {
+    padding: 10px 20px 10px 20px;
+}
+
+/*
+*copyright
+*/
+footer {
+    background-color: #010736;
+    color: #FFF;
+    text-align: center;
+}
+
+footer > .wrapper {
+    padding: 30px 0px 30px 0px;
+}
+
+/*
+*data diri
+*/
+button.data-diri {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    
+
+}
+
+button.data-diri > i {
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+button.data-diri > i.icon-close {
+    display: none;
+}
+
+/*
+*1024, 900, 768, 600, 450
+*/
+@media only screen and (max-width: 1024px){
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #statistic > .wrapper > div > p {
+    font-size: 2.5rem;
+    margin: 0px;
+    padding: 0px;
+    }
+
+    #statistic > .wrapper > div > p > i {
+        font-size: 2.5rem;
+    }
+    #statistic > .wrapper > div > small {
+        font-size: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 45% 45%;
+    }
+    .item > img {
+        width: 8%;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .menu {
+        width: 60%;
+    }
+    .header-jumbotron > h4 {
+        font-size: 1.5rem;
+    }
+    .header-jumbotron > h5 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .header-jumbotron > p {
+        font-size: 0.8rem;
+    }
+
+    .button {
+        padding: 5px;
+    }
+    .button-x1 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    #statistic > .wrapper > div > p {
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+    #statistic > .wrapper > div > p > i {
+        font-size: 1.5rem;
+    }
+} 
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 100%;
+    }
+
+    #statistic > .wrapper {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    #statistic > .wrapper > div {
+        display: flex;
+    }
+
+    #statistic > .wrapper > div > small {
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+
+    #tentang-saya > .wrapper > div {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #tentang-saya > .wrapper > div > .foto {
+        width: 50%;
+    }
+
+    #tentang-saya > .wrapper > div > .foto > img {
+        max-width: 100%;
+    }
+
+    #tentang-saya > .wrapper > div > .desc {
+        width: 70%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    #tentang-saya > .wrapper > div > .desc > .sosmed {
+        margin: auto;
+    }
+    button.data-diri {
+        display: inline;
+    }
+    .menu {
+        display: none;
+    }
+
+    .tampil {
+        display: inline;
+    }
+    .tampil > ul {
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        position: fixed;
+        top: 85px;
+        left: 0px;
+    }
+
+    .tampil > ul > li {
+        padding: 10px 20px 10px 20px;
+    }
+}
